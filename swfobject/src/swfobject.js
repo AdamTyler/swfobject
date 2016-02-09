@@ -8,7 +8,7 @@
   if (typeof define === 'function' && define.amd) {
     // AMD
     define(factory);
-  } else if (typeof exports === 'object') {
+  } else if (typeof module === 'object' && module.exports) {
     // Node, CommonJS-like
     module.exports = factory();
   } else {
